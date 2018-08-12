@@ -24,5 +24,4 @@ class MyHTTPHandler(http.server.SimpleHTTPRequestHandler):
         httpd = socketserver.TCPServer(("", PORT), MyHTTPHandler)
         logging.info('escutando a porta: %s', PORT)
         logging.info('usuário: %s', getpass.getuser())
-        httpd.serve_forever()
-        
+        httpd.serve_forever() 
