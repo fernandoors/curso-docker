@@ -55,8 +55,8 @@
     }
     
     const loadClient = client => {
-        $('name=id').val(client._id)
-        $('name=name').val(client.name)
+        $('[name=id]').val(client._id)
+        $('[name=name]').val(client.name)
         
     }
 
@@ -64,7 +64,7 @@
         $.ajax({
             method: 'DELETE',
             url: `${API}/clients/${client._id}`,
-            success: getClients 
+            success: getClients
         })
     }
 
