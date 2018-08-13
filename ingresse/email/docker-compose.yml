@@ -3,7 +3,7 @@ volumes:
   dados:
 services:
   db:
-    imege: postgres:9.6
+    image: postgres:9.6
     volumes:
       - dados:/var/lib/postgresql/data
       - ./scripts:/scripts
